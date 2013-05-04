@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Marko+One);
-@import url(http://fonts.googleapis.com/css?family=Asul);
 @import url(http://fonts.googleapis.com/css?family=Vollkorn);
 
 body
@@ -7,9 +5,7 @@ body
     color: #26282A;
     background-color: #E9EDED;
 
-    //font-family: 'Marko One', sans-serif;
     font-family: 'Vollkorn', sans-serif;
-    //font-family: 'Asul', sans-serif;
     font-size: 18px;
 
     margin: 0px 0px 0px 0px;
