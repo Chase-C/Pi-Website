@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Marko+One);
+@import url(http://fonts.googleapis.com/css?family=Asul);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+
+body
+{
+    color: #26282A;
+    background-color: #E9EDED;
+
+    //font-family: 'Marko One', sans-serif;
+    font-family: 'Vollkorn', sans-serif;
+    //font-family: 'Asul', sans-serif;
+    font-size: 18px;
+
+    margin: 0px 0px 0px 0px;
+    padding 0px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #CACAC8;
+}
+
+a.current
+{
+    color: #2A76EA;
+}
+
+#titlebar
+{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+
+    color: #CACAC8;
+
+    //background-color: #26282A;
+    background-image: url('../images/title-bg.jpg');
+    -moz-box-shadow:    0px 1px 6px 0px #26282A;
+    -webkit-box-shadow: 0px 1px 6px 0px #26282A;
+    box-shadow:         0px 1px 6px 0px #26282A;
+
+    z-index: 1;
+}
+
+#titlecontent
+{
+    position: absolute;
+    
+    width: 800px;
+    height: 80px;
+
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+
+    //background: #9A9A9A;
+}
+
+#name
+{
+    position: absolute;
+    top: 6px;
+    left: 10px;
+
+    font-size: 32px;
+}
+
+#links
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#container
+{
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+#content
+{
+    position: absolute;
+
+    width: 800px;
+    min-height: 100%;`
+
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    //background-color: #BBBBBB;
+}
+
+#content h1
+{
+    font-size: 32px;
+}
+
+#content hr
+{
+    border: 0;
+    height: 1px;
+    
+    background: #7A7A7A;
+}
+
+#content hr.top
+{
+    position: absolute;
+    top: 12px;
+    width: 800px;
+    margin-left: -15px;
+    background: #565656
+}
+
+#content hr.bottom
+{
+    position: absolute;
+    bottom: 10px;
+    width: 800px;
+    margin-left: -15px;
+    background: #565656
+}
