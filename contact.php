@@ -1,22 +1,22 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$f_name = $_POST['name'];
+$f_email = $_POST['email'];
+$f_message = $_POST['message'];
 
-$self = $_POST['self'];
+$f_self = $_POST['self'];
 
 $mailTo = 'chaseecummings@gmail.com';
-$subject = 'Message from Pi-Website visitor: ' . $name;
+$subject = 'Message from Pi-Website visitor: ' . $f_name;
 
-$body = 'From: ' . $name . "\n";
-$body .= 'Email: ' . $email . "\n\n";
-$body .= $message;
+$body = 'From: ' . $f_name . "\n";
+$body .= 'Email: ' . $f_email . "\n\n";
+$body .= $f_message;
 
 $header = "From: $email\r\n";
 $header .= "Reply-To: $email\r\n";
 
 $mail_status = mail($mailTo, $subject, $body, $header);
-if($self) {
+if($f_self) {
     $self_status = mail($email, $subject, $body, $header);
 }
 
