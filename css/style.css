@@ -6,29 +6,39 @@ body
     background-color: #E9EDED;
 
     font-family: 'Vollkorn', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
 
     margin: 0px 0px 0px 0px;
     padding 0px;
 }
 
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    display: inline;
+}
+
+p
+{
+    text-indent: 48px;
+    line-height: 160%;
+}
+
+b
+{
+    font-weight: 400;    
+    font-size: 19px;
+    color: #2A76EA;
+    //background-color: #D4D6D6;
+    //background-color: #26282A;
+}
+
 a
-{
-    text-decoration: none;
-    color: #CACAC8;
-}
-
-a.current
-{
-    //color: #2A76EA;
-}
-
-a:hover
-{
-    text-shadow: 0px 0px 10px #5A96EA
-}
-
-a:active
 {
     color: #2A76EA;
 }
@@ -50,6 +60,17 @@ a:active
     box-shadow:         0px 1px 6px 0px #26282A;
 
     z-index: 1;
+}
+
+#titlebar a
+{
+    text-decoration: none;
+    color: #CACAC8;
+}
+
+#titlebar a:hover
+{
+    text-shadow: 0px 0px 10px #5A96EA
 }
 
 #titlecontent
@@ -80,6 +101,8 @@ a:active
     position: absolute;
     bottom: 10px;
     right: 10px;
+
+    font-size: 18px;
 }
 
 #container
@@ -97,13 +120,13 @@ a:active
     position: absolute;
 
     width: 800px;
-    min-height: 100%;`
+    min-height: 100%;
 
     top: 0;
     left: 50%;
     margin-left: -400px;
 
-    padding: 10px 20px;
+    padding: 10px 25px;
     box-sizing: border-box;
 
     //background-color: #BBBBBB;
@@ -111,15 +134,17 @@ a:active
 
 #content h1
 {
-    font-size: 32px;
+    font-size: 36px;
+    margin-left: -15px;
 }
 
 #content hr
 {
     border: 0;
     height: 1px;
-    
-    background: #7A7A7A;
+    width: 95%;
+
+    background: #929292;
 }
 
 #content hr.top
@@ -127,15 +152,58 @@ a:active
     position: absolute;
     top: 12px;
     width: 800px;
-    margin-left: -20px;
+    margin-left: -25px;
     background: #565656
 }
 
 #content hr.bottom
 {
-    position: absolute;
     bottom: 10px;
     width: 800px;
-    margin-left: -20px;
+    margin-left: -25px;
     background: #565656
+}
+
+input
+{
+    border: 1px;
+    border-radius: 5px;
+
+    background: #C0C2C2;
+}
+
+input[type=submit]
+{
+    border: 1px solid #9A9C9C;
+    height: 30px;
+    width: 96px;
+}
+
+input.line
+{
+    padding: 0 6px 0px 6px;
+    margin: 0 0 20px 0;
+
+    width: 360px;
+    height: 26px;
+}
+
+input.check
+{
+    position: relative;
+    top: 2px;
+    margin-left: 40px;
+}
+
+textarea.block
+{
+    border: 1px;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 0 0 20px 0;
+
+    width: 720px;
+    height: 220px;
+
+    background: #C0C2C2;
 }
