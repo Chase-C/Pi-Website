@@ -12,14 +12,17 @@ $subject = 'Message from Pi-Website visitor: ' . $f_name;
 //$body .= 'Email: ' . $f_email . "\n\n";
 //$body .= $f_message;
 $body = "Test\r\nMessage\r\nYo";
+$body = wordwrap($body, 70, "\r\n");
 
 $header = "From: $email\r\n";
 $header .= "Reply-To: $email\r\n";
 
-$mail_status = mail($mailTo, $subject, $body);
+$mail_status = mail('chaseecummings@gmail.com', 'Test Subject', $body);
+/*
 if($f_self) {
     $self_status = mail($email, $subject, $body);
 }
+*/
 
 if($mail_status) {
 } else { ?>
