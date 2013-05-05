@@ -20,6 +20,16 @@ a
 
 a.current
 {
+    //color: #2A76EA;
+}
+
+a:hover
+{
+    text-shadow: 0px 0px 10px #5A96EA
+}
+
+a:active
+{
     color: #2A76EA;
 }
 
@@ -93,7 +103,7 @@ a.current
     left: 50%;
     margin-left: -400px;
 
-    padding: 15px;
+    padding: 10px 20px;
     box-sizing: border-box;
 
     //background-color: #BBBBBB;
@@ -117,7 +127,7 @@ a.current
     position: absolute;
     top: 12px;
     width: 800px;
-    margin-left: -15px;
+    margin-left: -20px;
     background: #565656
 }
 
@@ -126,6 +136,6 @@ a.current
     position: absolute;
     bottom: 10px;
     width: 800px;
-    margin-left: -15px;
+    margin-left: -20px;
     background: #565656
 }

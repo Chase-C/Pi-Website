@@ -2,10 +2,27 @@
 <html>
     <head>
         <title>Chase Cummings</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript">
+            function highlight(id) {
+                alert('derp');
+                id.parentNode.style.color = #CACAC8;
+                id.style.color = #2A76EA;
+            }
+
+            function pop() {
+                alert("yo");
+            }
+
+            function init() {
+                document.getElementByID("home").onclick = highlight(this);
+                document.getElementByID("titlebar").onclick = pop();
+                document.getElementByID("content").onclick = alert("test");
+            }
+        </script>
     </head>
 
-    <body>
+    <body onload="init()">
         <div id="titlebar">
             <div id="titlecontent">
                 <span id="name">
@@ -14,10 +31,11 @@
                 </span>
                 <span id="links">
                     <span> 
-                        <a class="current" href="#">Home</a> | 
+                        <a class="current" href="#" onclick="highlight(this)">Home</a> | 
                         <a href="projects.html">Projects</a> | 
                         <a href="resume.html">Resume</a> | 
-                        <a href="contact.html">Contact</a></span>
+                        <a href="contact.html">Contact</a>
+                    </span>
                 </span>
             </div>
         </div>
