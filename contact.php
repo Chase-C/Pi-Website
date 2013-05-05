@@ -14,8 +14,8 @@ $subject = 'Message from Pi-Website visitor: ' . $f_name;
 $body = "Test\r\nMessage\r\nYo";
 $body = wordwrap($body, 70, "\r\n");
 
-$header = "From: $email\r\n";
-$header .= "Reply-To: $email\r\n";
+$header = "From: $f_email\r\n";
+$header .= "Reply-To: $f_email\r\n";
 
 $mail_status = mail('chaseecummings@gmail.com', 'Test Subject', $body);
 /*
