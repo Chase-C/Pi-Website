@@ -17,7 +17,7 @@ $body = wordwrap($body, 70, "\r\n");
 $header = "From: $f_email\r\n";
 $header .= "Reply-To: $f_email\r\n";
 
-$mail_status = mail('chaseecummings@gmail.com', 'Test Subject', $body);
+$mail_status = mail('chaseecummings@gmail.com', 'Test Subject', 'Test Message');
 
 if($mail_status) {
 } else { ?>
