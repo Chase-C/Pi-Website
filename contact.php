@@ -3,7 +3,7 @@ $f_name = $_POST['name'];
 $f_email = $_POST['email'];
 $f_message = $_POST['message'];
 
-$f_self = $_POST['self'];
+//$f_self = $_POST['self'];
 
 $mailTo = 'chaseecummings@gmail.com';
 $subject = 'Message from Pi-Website visitor: ' . $f_name;
