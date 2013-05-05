@@ -4,20 +4,37 @@
         <title>Chase Cummings</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <script type="text/javascript">
-            function highlight(id) {
-                alert('derp');
-                id.parentNode.style.color = #CACAC8;
-                id.style.color = #2A76EA;
-            }
+            var home;
+            var projects;
+            var resume;
+            var contact;
 
-            function pop() {
-                alert("yo");
+            function highlight(id) {
+                home.style.color = "#CACAC8";
+                projects.style.color = "#CACAC8";
+                resume.style.color = "#CACAC8";
+                contact.style.color = "#CACAC8";
+                id.style.color = "#2A76EA";
             }
 
             function init() {
-                document.getElementByID("home").onclick = highlight(this);
-                document.getElementByID("titlebar").onclick = pop();
-                document.getElementByID("content").onclick = alert("test");
+                // There's probably a better way to do this, but whatever
+                home = document.getElementById("home");
+                projects = document.getElementById("projects");
+                resume = document.getElementById("resume");
+                contact = document.getElementById("contact");
+                home.onclick = function() {
+                    highlight(home);
+                }
+                projects.onclick = function() {
+                    highlight(projects);
+                }
+                resume.onclick = function() {
+                    highlight(resume);
+                }
+                contact.onclick = function() {
+                    highlight(contact);
+                }
             }
         </script>
     </head>
@@ -31,10 +48,10 @@
                 </span>
                 <span id="links">
                     <span> 
-                        <a class="current" href="#" onclick="highlight(this)">Home</a> | 
-                        <a href="projects.html">Projects</a> | 
-                        <a href="resume.html">Resume</a> | 
-                        <a href="contact.html">Contact</a>
+                        <a id="home" href="#">Home</a> | 
+                        <a id="projects" href="#">Projects</a> | 
+                        <a id="resume" href="#">Resume</a> | 
+                        <a id="contact" href="#">Contact</a>
                     </span>
                 </span>
             </div>
