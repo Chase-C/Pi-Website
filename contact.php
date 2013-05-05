@@ -19,4 +19,13 @@ $mail_status = mail($mailTo, $subject, $body, $header);
 if($self) {
     $self_status = mail($email, $subject, $body, $header);
 }
+
+if($mail_status) {
+} else { ?>
+    <script language="javascript" type="text/javascript">
+        alert('Message failed to send');
+        window.location = '/';
+    </script>
+<?php
+}
 ?>
