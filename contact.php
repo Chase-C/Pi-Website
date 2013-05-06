@@ -22,10 +22,10 @@ $header = "From: $f_email\r\n";
 $header .= "Reply-To: $f_email\r\n";
 
 ?><script language="javascript" type="text/javascript">
-        window.location = '/';
+        //window.location = '/';
     </script><?php
 
-$mail_status = mail($mail_to, $subject, $body, $header);
+//$mail_status = mail($mail_to, $subject, $body, $header);
 
 if($mail_status) {
 } else { ?>
