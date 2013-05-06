@@ -6,12 +6,12 @@ $f_message = $_POST['message'];
 $f_self = $_POST['self'];
 print_r($f_self);
 
-if($f_self == "send") {
+if($f_self == 'send') {
     mail($f_email, $subject, $body, $header);
 }
 
 $mail_to = 'chaseecummings@gmail.com';
-$subject = 'Message from Pi-Website visitor: ' . $f_name;
+$subject = 'Message from website visitor: ' . $f_name;
 
 $body = 'From: ' . $f_name . "\n";
 $body .= 'Email: ' . $f_email . "\n\n";
