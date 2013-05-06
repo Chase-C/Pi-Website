@@ -17,22 +17,25 @@ $body = wordwrap($body, 70, "\r\n");
 $header = "From: $f_email\r\n";
 $header .= "Reply-To: $f_email\r\n";
 
-if($f_self == 'send') {
-    mail($f_email, $subject, $body, $header);
-}
-
 ?><script language="javascript" type="text/javascript">
-        //window.location = '/';
-    </script><?php
+    window.location = '/';
+</script><?php
 
-//$mail_status = mail($mail_to, $subject, $body, $header);
+$mail_status = ;
 
-if($mail_status) {
-} else { ?>
+if(!mail($mail_to, $subject, $body, $header)) { ?>
     <script language="javascript" type="text/javascript">
         alert('Message failed to send');
-        window.location = '/';
     </script>
 <?php
+}
+
+if($f_self == 'send') {
+    if(!mail($f_email, $subject, $body, $header)) { ?>
+        <script language="javascript" type="text/javascript">
+            alert('Message failed to send');
+        </script>
+    <?php
+    }
 }
 ?>
