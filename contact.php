@@ -21,8 +21,6 @@ $header .= "Reply-To: $f_email\r\n";
     window.location = '/';
 </script><?php
 
-$mail_status = ;
-
 if(!mail($mail_to, $subject, $body, $header)) { ?>
     <script language="javascript" type="text/javascript">
         alert('Message failed to send');
