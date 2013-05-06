@@ -6,7 +6,7 @@ $f_message = $_POST['message'];
 $f_self = $_POST['self'];
 print_r($f_self);
 
-if($f_self == 'send') {
+if($f_self != '') {
     mail($f_email, $subject, $body, $header);
 }
 
