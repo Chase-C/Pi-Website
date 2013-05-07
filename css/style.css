@@ -25,7 +25,7 @@ li
 
 p
 {
-    text-indent: 48px;
+    //text-indent: 48px;
     line-height: 160%;
 }
 
@@ -162,6 +162,11 @@ a
     width: 800px;
     margin-left: -25px;
     background: #565656
+}
+
+#project-content
+{
+    margin-left: 20px;
 }
 
 input
